@@ -1,0 +1,41 @@
+body{font-family:'Roboto', sans-serif; font-size: 14px;}
+
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+.font-oswald{font-family:'Oswald';}
+.font-inter{font-family:'Inter';}
+/*.font-helvetica{font-family:'Helvetica Neue';}*/
+
+.btn{padding:8px 15px; }
+
+
+
+.fs-18{font-size: 18px;}
+.fs-14{font-size: 14px;}
+.fs-12{font-size: 12px;}
+
+.offcanvas-body .btn.bg-black{ padding-top:10px; padding-bottom:10px; }
+
+.accordion-item{border:none; border-radius: 0.25rem; overflow: hidden; }
+.accordion-button:not(.collapsed){background: #FCF5F8 !important; color: #E22228 !important}
+.accordion-button::after{background: none !important; content: "\F229";font-family: bootstrap-icons !important;}
+
+header li a.active{text-decoration: underline !important}
+
+#heroArea{background: url("../images/banner.jpg") no-repeat center; background-size: cover }
+#eventArea{background:#E31414 ;}
+#zonesArea ul {color: #333 }
+
+#footer li a.active{text-decoration: underline !important}
+
+@media (min-width:1200px) and (max-width:1399px){}
+@media (min-width:992px) and (max-width:1199px){}
+@media (min-width:768px) and (max-width:991px){}
+@media (min-width:576px) and (max-width:767px){}
+@media (min-width:0px) and (max-width:575px){
+    h2,h4 {font-size: 16px;}
+    .fs-5, h5{font-size: 14px !important}
+    .ratio.ratio-1x1{width:80px !important }
+    .ratio.ratio-1x1 img{width: 40px}
+}
+
