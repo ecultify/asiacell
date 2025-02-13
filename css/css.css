@@ -1,41 +1,249 @@
-body{font-family:'Roboto', sans-serif; font-size: 14px;}
-
-a{text-decoration:none;}
-a:hover{text-decoration:underline;}
-.font-oswald{font-family:'Oswald';}
-.font-inter{font-family:'Inter';}
-/*.font-helvetica{font-family:'Helvetica Neue';}*/
-
-.btn{padding:8px 15px; }
-
-
-
-.fs-18{font-size: 18px;}
-.fs-14{font-size: 14px;}
-.fs-12{font-size: 12px;}
-
-.offcanvas-body .btn.bg-black{ padding-top:10px; padding-bottom:10px; }
-
-.accordion-item{border:none; border-radius: 0.25rem; overflow: hidden; }
-.accordion-button:not(.collapsed){background: #FCF5F8 !important; color: #E22228 !important}
-.accordion-button::after{background: none !important; content: "\F229";font-family: bootstrap-icons !important;}
-
-header li a.active{text-decoration: underline !important}
-
-#heroArea{background: url("../images/banner.jpg") no-repeat center; background-size: cover }
-#eventArea{background:#E31414 ;}
-#zonesArea ul {color: #333 }
-
-#footer li a.active{text-decoration: underline !important}
-
-@media (min-width:1200px) and (max-width:1399px){}
-@media (min-width:992px) and (max-width:1199px){}
-@media (min-width:768px) and (max-width:991px){}
-@media (min-width:576px) and (max-width:767px){}
-@media (min-width:0px) and (max-width:575px){
-    h2,h4 {font-size: 16px;}
-    .fs-5, h5{font-size: 14px !important}
-    .ratio.ratio-1x1{width:80px !important }
-    .ratio.ratio-1x1 img{width: 40px}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.font-oswald {
+    font-family: 'Oswald';
+}
+
+.font-inter {
+    font-family: 'Inter';
+}
+
+/*.font-helvetica{font-family:'Helvetica Neue';}*/
+
+.btn {
+    padding: 8px 15px;
+}
+
+
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.offcanvas-body .btn.bg-black {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.accordion-item {
+    border: none;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.accordion-item:first-child {
+    margin-top: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #FCF5F8 !important;
+    color: #E22228 !important
+}
+
+.accordion-button::after {
+    background: none !important;
+    content: "\F229";
+    font-family: bootstrap-icons !important;
+}
+
+header li a.active {
+    text-decoration: underline !important
+}
+
+#heroArea {
+    background: url("../images/banner.jpg") no-repeat center;
+    background-size: cover
+}
+
+#eventArea {
+    background: #E31414;
+}
+
+#zonesArea ul {
+    color: #333
+}
+
+#footer li a.active {
+    text-decoration: underline !important
+}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:992px) and (max-width:1199px) {}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (min-width:576px) and (max-width:767px) {}
+
+@media (min-width:0px) and (max-width:575px) {
+
+    h2,
+    h4 {
+        font-size: 16px;
+    }
+
+    .fs-5,
+    h5 {
+        font-size: 14px !important
+    }
+
+    .ratio.ratio-1x1 {
+        width: 80px !important
+    }
+
+    .ratio.ratio-1x1 img {
+        width: 40px
+    }
+
+    h1.display-3 {
+        font-size: calc(1.2rem + 3vw);
+    }
+    
+    h2 {
+        font-size: calc(1rem + 1vw);
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* Arabic version */
+html[lang="ar"] {
+    font-family: 'IRANYekan' !important;
+}
+
+html[lang="ar"] .font-helvetica,
+html[lang="ar"] .font-oswald {
+    font-family: 'IRANYekan' !important;
+}
+
+/* Kurdish version */
+html[lang="ku"] {
+    font-family: 'IRANYekan' !important;
+}
+
+html[lang="ku"] .font-helvetica,
+html[lang="ku"] .font-oswald {
+    font-family: 'IRANYekan' !important;
+}
+
+/* Keep English text in both versions */
+html[lang="ar"] .text-en,
+html[lang="ku"] .text-en {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Add these new rules */
+html[lang="ar"],
+html[lang="ku"] {
+    font-family: 'IRANYekan', sans-serif !important;
+}
+
+html[lang="ar"] *,
+html[lang="ku"] * {
+    font-family: inherit;
+}
+
+/* If you want specific elements to use different weights */
+html[lang="ar"] h1,
+html[lang="ku"] h1 {
+    font-weight: 700;
+}
+
+html[lang="ar"] h2,
+html[lang="ku"] h2 {
+    font-weight: 500;
+}
+
+html[lang="ar"] p,
+html[lang="ku"] p {
+    font-weight: 400;
+}
+
+/* Add these styles */
+@media (max-width: 575px) {
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .offcanvas {
+        width: 85% !important;
+    }
+    
+    .nav-link {
+        padding: 0.75rem 0;
+    }
+    
+    .nav.gap-3 {
+        gap: 0.5rem !important;
+    }
+    
+    #footer .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Logo and Navigation Styles */
+#offcanvasLogo {
+    display: block;
+    position: relative;
+    z-index: 1001;
+    max-width: 170px;
+}
+
+#offcanvasLogo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* For footer logo */
+
+
+@media (max-width: 575px) {
+    footer img.img-fluid {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+    
+    #footer ul.nav img.img-fluid {
+        max-width: 120px;
+        height: 36px;
+    }
+}
+
+.offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+}
+.offcanvas {
+    z-index: 1050;
+}
